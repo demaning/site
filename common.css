@@ -1,3 +1,10 @@
+.tabl_rad
+{
+border-radius: 10px;
+opacity: 0.5;
+}
+
+
 /* COMMON STYLES */
 /* Don't delete existing styles, only modify its or add new ones! */
 
@@ -23,7 +30,19 @@ table.dsn { border-collapse: separate; border-spacing: 0; }
 .clear { clear: both; height: 0px; overflow: hidden; }
 
 /* COMMON */
-body { background-image: url('_mod_files/ce_images/menu/fon_vesna_2014_02.jpg');}
+
+                      /*-----------------------------Фон сайта--------------------------*/
+body
+{
+background-color: #1f5d4e;
+background-image: url('_mod_files/ce_images/menu/fon_2.jpg'); background-position:top left;
+background-attachment: fixed /*scroll*/; background-repeat: repeat;
+width: 100%;
+min-width: 1000px;
+min-height: 100%;
+}
+                      /*-----------------------------Фон сайта конец----------------------------------*/
+
 body, table, tr, td, p, a, input, select, textarea {color:#3E3E3E;font-family:Tahoma; font-size:11px; }
 
 A {color:#036B88;text-decoration:none}
@@ -34,13 +53,16 @@ HR {background-color:#3e3e3e; height:1px; color:#3e3e3e; border:none;}
 
 BLOCKQUOTE {margin-top:5px;margin-bottom:5px;margin-left:16px;margin-right:0px}
 
-h1, h1 a, h1 a:visited, h1 a:hover  {color:#61606b;font-size:12px;font-weight:bold; font-family:arial; text-transform:uppercase; margin-bottom:0px; margin-top:0px;}
+
+h1, h1 a, h1 a:visited, h1 a:hover  {color:#000033;font-size:16px;font-weight:bolder; font-family:times new roman; text-transform:uppercase; margin-bottom:0px; margin-top:0px; text-align:center; text-shadow: 0 0 1em #44944A}
 h2, h2 a, h2 a:visited, h2 a:hover  {color:#000000;font-size:12px;font-weight:bold; margin-bottom:5px; margin-top:5px;}
 h3, h3 a, h3 a:visited, h3 a:hover  {color:#036B88;font-size:12px;font-weight:bold; margin-bottom:5px; margin-top:5px;}
 h4, h4 a, h4 a:visited, h4 a:hover  {color:#000000;font-size:12px;font-weight:bold; margin-bottom:5px; margin-top:5px;}
 h5, h5 a, h5 a:visited, h5 a:hover  {color:#0180A3;font-size:11px;font-weight:normal; margin-bottom:5px; margin-top:5px;}
-hhh, hhh a, hhh a:visited, hhh a:hover  {color:#000000;font-size:14px;font-weight:bolder; margin-bottom:5px; margin-top:5px;}
-
+hhh {color:#000033; font-size:42px; font-weight:bolder; text-align: center; margin-bottom:5px; margin-top:5px; text-shadow: 0 0 1em #44944A;}
+cont, cont a, cont a:visited, cont a:hover  {color:#000033;font-size:11px;font-weight:bolder; font-family:tahoma; /*margin-bottom:5px; margin-top:5px; margin-left: 7px;*/ padding: 7px;}
+.alt_header2 {font-family:tahoma; font-size:14px; font-weight:bolder; font-family:times new roman;}
+.alt_header3 {font-family:tahoma; font-size:14px; font-weight:bolder; font-family:times new roman;}
 /* COMMON STYLES FORM */
 
 
@@ -107,7 +129,7 @@ TABLE.price TD {font-size:11px;padding:5px 8px 5px 8px}
 /* END COMMON STYLES */
 
 /* CURRENT DESIGN STYLES START */
-#small a {color:#036B88;text-decoration:underline;font-size:11px;}
+#small a {color:#ff0000;text-decoration:underline;font-size:11px;}
 #small a:hover {color:#036B88;text-decoration:none;font-size:11px;}
 #small a:visited {color:#036B88;font-size:11px;}
 #small {font-size:11px;}
@@ -151,7 +173,7 @@ img{border:0px;}
 /* CURRENT DESIGN STYLES END */
 
 /* NAVIGATION STYLES TOP MENU */
-.top_menu, .top_menu a, .top_menu a:hover, .top_menu a:visited {font-size:10px;}
+.top_menu, .top_menu a, .top_menu a:hover, .top_menu a:visited {font-size:100px;}
 .top_menu a.item_top_active, .top_menu a.item_top_active:visited {}
 /* NAVIGATION STYLES END TOP MENU */
 
@@ -163,30 +185,52 @@ img{border:0px;}
 /* NAVIGATION STYLES MAIN MENU */ 
 
                            /*    НАСТРОЙКИ МЕНЮ  */
+/*верхний блок*/
+.main_menu {background: linear-gradient(to top, #48D1CC, #497E76);  border-radius: 20px 20px 0 0}
 
-.main_menu {}
-.main_menu TD{}
-.main_menu A, .main_menu A:visited {color:#000000;font-weight:bold;font-size:14px;font-family:times new roman;text-transform:uppercase;text-decoration:none;}
-.main_menu a.item_active, .main_menu a.item_active:visited {text-color:#000ff;}
-.main_menu A:hover {color:#0000ff;text-decoration:none;font-weight:bold;text-transform:uppercase;}
+.main_menu TD{ border-radius: 20px;}
+.main_menu A, .main_menu A:visited {color:#000033; font-weight:bold; font-size:14px; font-family:times new roman; text-transform:uppercase; text-decoration:none; text-align:center;}
+.main_menu a.item_active, .main_menu a.item_active:visited {text-color:#000033;}
+.main_menu A:hover {color:#0000eb; text-decoration:none;font-weight:bold;text-transform:uppercase;}
+
+/*---------------Фон в верхнем блоке где название---------------*/
+.main_menu1 {background: linear-gradient(to top, #497E76, #48D1CC)}
+/*---------------Фон в верхнем блоке где бегущая строка---------------*/
+.main_menu11 {background: #497E76}
+
+/*--------------- Активный объект меню---------------*/
+.main_menu2 {background: linear-gradient(to top, #48D1CC, #649a9e); border-radius: 20px 20px 0 0;}
 
 
-.submenu { position:absolute; left: 0; top:0; display:none;width:13px;}
+
+/*центральный блок*/
+.main_menu3 {background: url(_mod_files/ce_images/menu/fon_60.png); /*border-radius:  0 0 20px 20px;*/}
+
+/*Левый блок*/
+.main_menu4 {background: url(_mod_files/ce_images/menu/fon_70.png);/* border-radius:  0 0 20px 20px;*/}
+
+/*Нижний блок блок (подвал)*/
+.main_menu5 {background: url(_mod_files/ce_images/menu/fon_70.png); border-radius:  0 0 20px 20px;}
+
+
+
+.submenu { position:absolute; lest: 0; top:0; display:none;width:13px;}
 
 /*МАКЕТ ВЫПАДАЮЩЕГО МЕНЮ(размер линии, цвет линии, скругление углов, цвет фона, смещение слева и сверху, ширина вып. меню,)*/
-.pd_menu {border:2px #0000ff solid; border-radius: 10px; background-color:#89C6D7; position:relative; right: 80px; margin-top: 10px; width: 340px; z-index: 9999;}
+.pd_menu {border:2px #00693E solid; border-radius: 10px; background: linear-gradient(to top, #649a9e, #48D1CC); position:relative; right: 80px; margin-top: 10px; width: 340px; z-index: 9999;}
 
 /*МАКЕТ СТРОК ВЫПАДАЮЩЕГО МЕНЮ*/
 .pd_menu td {color:#000000; border:0px; padding:5px 8px 5px 8px;}
 
 /*МАКЕТ ТЕКСТА В СТРОКАХ ВЫПАДАЮЩЕГО МЕНЮ*/
-.pd_menu a, .pd_menu a:visited {font-size:12px; text-decoration:none; font-weight: bolder;  white-space: pre-line;}
+.pd_menu a, .pd_menu a:visited {font-size:12px; color:#000033; text-decoration:none; font-weight: bolder;  white-space: pre-line;}
 
 /*МАКЕТ ТЕКСТА В СТРОКАХ ВЫПАДАЮЩЕГО МЕНЮ ПРИ НАВЕДЕНИИ*/
-.pd_menu a:hover {color:#0000ff; text-decoration:none; font-weight: bolder;}
+.pd_menu a:hover { color:#002137; text-decoration:none;font-weight: bolder;}
 
 /*МАКЕТ СТРОК ВЫПАДАЮЩЕГО МЕНЮ ПРИ НАВЕДЕНИИ*/
-.pd_menu td:hover {background-color:#89b7d7; border-radius: 10px;}
+.pd_menu td:hover {color:#000000; border:0px; padding:5px 8px 5px 8px; background-color:#3f888f; border-radius: 10px;}
+
 
 
 /* NAVIGATION STYLES END MAIN MENU */
@@ -278,7 +322,7 @@ a.pager_block:hover { background-color: #ccc; }
 
 .pages_sibl_bar { text-align: center; margin: 0px 0px 20px 0px; }
 
-.pages_name {  }
+.pages_name {}
 .pages_name h3 {  }
 
 a.pages_print_version:link, a.pages_print_version:visited, 
@@ -308,21 +352,26 @@ a.pages_print_version img { margin-right: 8px; }
 /* MODULES END BLOG */
 
 /*MODULES NEWS STYLES */
+                 
+/*Анонс новостей*/
 .small_news { }
 .small_news_item_row {  }
 .small_news_urgent_item_row, .small_news_sticky_item_row, .small_news_sticky_item_row { color: #ff0000; }
-.small_news_item_date { display: inline; }
+.small_news_item_date {font-family:Tahoma; color: #000033; font-size:11px; font-weight:bolder; display: inline; }
 .small_news_item_time { }
-.small_news_item_header { display: inline; }
+.small_news_item_header {font-family:Tahoma; color: #000033; font-size:14px; font-weight:bolder; display: inline; }
 .small_news_item_announce { }
 .small_news_rss { }
 
+                        /*Блок новостей       туэтт.рф/news*/
 .news { }
 .news_item_row {  }
-.news_item_date {  }
+/*Настройка даты*/
+.news_item_date {font-family:Tahoma; color: #000033; font-size:12px; font-weight:bolder;}
 .news_item_time {  }
-.news_item_header {  }
-.news_item_announce {  }
+/*Настройка заголовка*/
+.news_item_header {font-family:Tahoma; color: #000033; font-size:14px; font-weight:bolder; }
+.news_item_announce { }
 
 .news_item_row {  }
 .news_urgent_item_date {  }

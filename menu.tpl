@@ -1,10 +1,10 @@
 ##--  ==========  Main menu templates ===================== --##
-<!--#set var="main_block" value="<table cellspacing=0 cellpadding=0 border=0 class="main_menu"><tr><td width=1><img alt="##name##" src="_img/splittermenu.gif"></td>##content##</tr></table>"-->
+<!--#set var="main_block" value="<table cellspacing=0 cellpadding=0 border=0 class="main_menu"><tr><td width=1><img alt="##name##"></td>##content##</tr></table>"-->
 <!--#set var="main_item" value="##splitter##
-<td align=center valign=middle style="padding-left:10px; padding-right:10px;" background="_mod_files/ce_images/kartinki/fonmenu_.png">
-<table cellspacing=0 cellpadding=0 border=0>
-<tr><td><img alt="##name##" src="_img/linemenu.gif"></td></tr>
-<tr><td>
+<td align=center valign=top style="padding-left:1px; padding-right:1px;">
+<table cellspacing=0 cellpadding=0 border=0 >
+<tr><td><img alt="##name##" src="_mod_files/ce_images/menu/fon_menu_2.png"></td></tr>
+<tr><td align=center valign=top style="padding-left:5px; padding-right:5px; height: 50px;">
     
              ##noindex_start####if(have_submenu == "1" )## 
               <a ##relnofollow## name="v##id##" id="j##id##" href="##link##" onmouseover="showMenu(##id##, 0, 'left', 'bottom', -8, 0);" onmouseout="moff();">##name##</a>
@@ -16,10 +16,10 @@
 					 </td>
 "-->
 <!--#set var="main_item_active" value="##splitter##
-<td align=center valign=middle style="padding-left:10px; padding-right:10px;" background="_mod_files/ce_images/kartinki/fonmenu_act.png">
-<table cellspacing=0 cellpadding=0 border=0>
-<tr><td><img alt="##name##" src="_img/linemenu1.gif"></td></tr>
-<tr><td>
+<td align=center valign=top style="padding-left:1px; padding-right:1px;">
+    <table cellspacing=0 cellpadding=0 border=0 class="main_menu2">
+<tr><td><img alt="##name##" src="_mod_files/ce_images/menu/fon_menu_2.png"></td></tr>
+<tr><td align=center valign=top style="padding-left:5px; padding-right:5px; height: 50px;">
              ##noindex_start####if(have_submenu == "1" )## 
               <a ##relnofollow## name="v##id##" id="j##id##" href="##link##" onmouseover="showMenu(##id##, 0, 'left', 'bottom', -8, 0);" onmouseout="moff();">##name##</a>
              ##else## 
@@ -30,7 +30,7 @@
 					 </td>
 "-->
 
-<!--#set var="main_splitter" value="<td width=1><img alt="##name##" src="_img/splittermenu.gif"></td>"-->
+<!--#set var="main_splitter" value="<td width=1><img alt="##name##"></td>"-->
 
 ##--  ==========  Imaged main menu templates =================== --##
 
@@ -93,9 +93,9 @@
 "-->
 <!--#set var="sub_item_active" value="##splitter##<tr><td nowrap>##noindex_start##
 ##if(have_submenu == "1")##
-<a href="##link##"    style="color:#120a8f" ##relnofollow## name="v##id##" id="j##id##" onmouseover="showMenu(##id##, ##parent_id##, 'right', 'top', 5, -3);" onmouseout="submoff(##id##)" onclick="smclick()">##name##</a>
+<a href="##link##"    style= "color:#0000eb" ##relnofollow## name="v##id##" id="j##id##" onmouseover="showMenu(##id##, ##parent_id##, 'right', 'top', 5, -3);" onmouseout="submoff(##id##)" onclick="smclick()">##name##</a>
 ##else##
-<a href="##link##"    style="color:#120a8f" ##relnofollow## onmouseover="mon()" onclick="smclick()">##name##</a>
+<a href="##link##"    style= "color:#0000eb" ##relnofollow## onmouseover="mon()" onclick="smclick()">##name##</a>
 ##endif##
 ##noindex_end##
 </td></tr>
